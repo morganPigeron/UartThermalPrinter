@@ -2,7 +2,7 @@ import serial
 import time
 
 uart = serial.Serial('COM4',9600, timeout=0)
-
+"""
 class UartThermalPrinter:
 
     def __init__(self, uart):
@@ -154,7 +154,7 @@ class UartThermalPrinter:
         self.uart.write(chr(height).encode(encoding='utf-8', errors='strict')) #n  
 
     #GS k m d1...dk NUL      
-
+"""
 imprimante = UartThermalPrinter(uart)
 
 imprimante.initialize()
